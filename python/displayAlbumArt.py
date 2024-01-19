@@ -15,11 +15,11 @@ options.parallel = 1
 options.hardware_mapping = 'adafruit-hat-pwm'
 # options.gpio_slowdown = 0
 # options.gpio_slowdown = 1
-options.gpio_slowdown = 2
-options.brightness = 60
-# options.limit_refresh_rate_hz = 250
+options.gpio_slowdown = 4
+options.brightness = 40
+options.limit_refresh_rate_hz = 70
 # options.led_pwm_dither_bits = 1
-options.show_refresh_rate = 1
+
 
 matrix = RGBMatrix(options = options)
 
