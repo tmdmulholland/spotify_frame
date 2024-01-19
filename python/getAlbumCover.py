@@ -14,13 +14,13 @@ def getAlbumCover():
 
     sp = spotipy.Spotify(auth=token)
 
-    results = sp.current_user_playing_track()
+    currentData = sp.current_user_playing_track()
 
-    song = results['item']['name']
-    imageURL = results['item']['album']['images'][2]['url']
-    print(song)
-    print(imageURL)
-
-    return[song,imageURL]
-
-getAlbumCover()
+    if currentData is None:
+        return
+    else:
+        song = currentData['item']['name']
+        imageURL = currentData['item']['album']['images'][0]['url']
+        print(song)
+        print(imageURL)
+        return[song, imageURL]
