@@ -13,11 +13,12 @@ options.cols = 64
 options.chain_length = 1
 options.parallel = 1
 options.hardware_mapping = 'adafruit-hat-pwm'
-options.gpio_slowdown = 0
+# options.gpio_slowdown = 0
 # options.gpio_slowdown = 1
-# options.gpio_slowdown = 2
+options.gpio_slowdown = 2
 options.brightness = 50
-options.limit_refresh_rate_hz = 120
+options.limit_refresh_rate_hz = 250
+options.led_pwm_dither_bits = 1
 
 matrix = RGBMatrix(options = options)
 
