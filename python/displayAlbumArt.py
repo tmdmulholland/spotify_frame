@@ -4,6 +4,7 @@ import requests
 from io import BytesIO
 import time
 from rgbmatrix import RGBMatrix, RGBMatrixOptions
+import spotipy
 
 
 options = RGBMatrixOptions()
