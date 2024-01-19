@@ -17,7 +17,7 @@ options.gpio_slowdown = 0
 # options.gpio_slowdown = 1
 # options.gpio_slowdown = 2
 options.brightness = 50
-options.limit_refresh_rate_hz = 10
+options.limit_refresh_rate_hz = 120
 
 matrix = RGBMatrix(options = options)
 
