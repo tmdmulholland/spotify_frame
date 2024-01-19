@@ -16,8 +16,8 @@ options.hardware_mapping = 'adafruit-hat-pwm'
 options.gpio_slowdown = 0
 # options.gpio_slowdown = 1
 # options.gpio_slowdown = 2
-options.brightness = 60
-options.limit_refresh_rate_hz = 0
+options.brightness = 50
+options.limit_refresh_rate_hz = 10
 
 matrix = RGBMatrix(options = options)
 
@@ -44,6 +44,6 @@ try:
         time.sleep(0.5)
 
 except:
-    print('nothing playing')
+    print('nothing playing'10
     time.sleep(1)
 
