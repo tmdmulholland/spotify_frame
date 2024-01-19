@@ -21,6 +21,4 @@ def getAlbumCover():
     else:
         song = currentData['item']['name']
         imageURL = currentData['item']['album']['images'][0]['url']
-        print(song)
-        print(imageURL)
         return[song, imageURL]

@@ -36,11 +36,12 @@ try:
             img = Image.open(BytesIO(response.content))
             img.show()
             img.thumbnail((matrix.width, matrix.height), Image.ANTIALIAS)
+            print(currentSong)
         else:
             print('same song')
 
         matrix.SetImage(img.convert('RGB'))
-        time.sleep(1)
+        time.sleep(0.5)
 
 except:
     print('nothing playing')
