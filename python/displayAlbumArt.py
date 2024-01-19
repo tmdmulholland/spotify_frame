@@ -44,6 +44,6 @@ try:
         time.sleep(0.5)
 
 except:
-    print('nothing playing'10
+    print('nothing playing')
     time.sleep(1)
 
